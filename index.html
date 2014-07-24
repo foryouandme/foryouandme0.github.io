@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>Prototyping</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+             
+
+       <script language="javascript" type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+       <script language="javascript" type="text/javascript" src="js/jQuery.js"></script>
+
+       <script src="js/script.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h2>PrototypeC</h2>
+
+        </header>
+                           <!--<a href="#" class="classname"></a>-->
+
+ <nav id="nav1">
+    <a href="#" class="button" class=".hovered" ></a>
+
+  </nav>
+
+<script>
+
+/*
+$('#nav1').on( "click", '.button', function(e){
+    alert('CLICKED 1');
+});
+
+$('#nav2').on( "click", '.button2', function(e){
+            $("body").css("background-color","yellow");
+            $("body").css("background-color","black");
+
+    $('.button').trigger('click');
+});
+
+*/
+
+$(window).load(function(){
+$("#nav1").click(function () {
+    $("body").toggleClass("on");
+});
+});
+
+
+
+
+
+</script>
+
+
+    </body>
+</html>
